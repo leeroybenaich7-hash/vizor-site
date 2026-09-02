@@ -69,6 +69,13 @@ nav{
 .nav-right{margin-left:auto;display:flex;align-items:center;gap:16px}
 .nav-right .sign{font-size:14.5px;color:var(--muted)}
 @media(max-width:800px){.nav-links{display:none}}
+/* sur téléphone la pilule suffit : « Se connecter » mène au même endroit
+   et se cassait sur deux lignes dans une barre de 60 px */
+@media(max-width:560px){
+  .nav-right .sign{display:none}
+  .nav-right .pill{padding:9px 16px;font-size:14px}
+  .mark{font-size:17px}
+}
 
 /* ---------- boutons : pilule, comme la référence ---------- */
 .pill{
